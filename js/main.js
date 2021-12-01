@@ -1,7 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
-    slidesPerView: 1,
+    slidesPerView: 3,
     loop: true,
     autoplay: {
       delay: 3500,
@@ -12,10 +12,10 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
         },
         768:{
-            slidesPerView: 1,
+            slidesPerView: 2,
         },
         1024:{
-            slidesPerView: 1,
+            slidesPerView: 3,
         },
     },
     pagination: {
@@ -76,7 +76,7 @@ hamburger.addEventListener('click',function (){
 
 // form js
 const signup = document.getElementById('sign__up');
-signup.addEventListener('click',function (){
+signup.addEventListener('click', function (){
     const form = document.querySelector('.sign__up');
     const signin = document.querySelector('.sign__in')
     form.classList.toggle('slide');

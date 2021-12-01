@@ -189,13 +189,25 @@ $fontFamily :'Inter', sans-serif;
                                 color: #F4ECFE;
                             }
                         }
-                        button.btn__mobile{
-                            display: block;
+                    }
+                    button.btn__mobile{
+                        display: block;
+                        padding: 12px 40px;
+                        margin: 20px auto;
+                        font-family: $fontFamily;
+                        background-color: #fff;
+                        color: #000;
+                        cursor: pointer;
+                        outline: none;
+                        border: none;
+                        border-radius: 6px;
+                        a{
+                            text-decoration: none;
                         }
                     }
                 }
                 nav.navbar.navShow{
-                    height: 50vh;
+                    height: 60vh;
                     transition: 0.5s;
                 }
                 .btn__header{

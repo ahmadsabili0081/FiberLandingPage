@@ -207,11 +207,23 @@
   .container header .container__header nav.navbar ul.fiber__list li a.fiber__list__link {
     color: #F4ECFE;
   }
-  .container header .container__header nav.navbar ul.fiber__list button.btn__mobile {
+  .container header .container__header nav.navbar button.btn__mobile {
     display: block;
+    padding: 12px 40px;
+    margin: 20px auto;
+    font-family: "Inter", sans-serif;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+  }
+  .container header .container__header nav.navbar button.btn__mobile a {
+    text-decoration: none;
   }
   .container header .container__header nav.navbar.navShow {
-    height: 50vh;
+    height: 60vh;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
