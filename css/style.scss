@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+$fontFamily :'Inter', sans-serif;
+:root{
+    --btn-color:#8213FF;
+    --text-color:#5A5A5A;
+    --font-banner:#000000;
+    --banner-bg: #F4ECFE;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    .btn{
+        padding: 10px;
+        border-radius: 7px;
+        position: fixed;
+        right: 0px;
+        transform: translateX(100px);
+        bottom: 20px;
+        background-color: #000;
+        cursor: pointer;
+        transition: 0.5s;
+        z-index: 300;
+        i{
+            color: #fff;
+        }
+    }
+    header{
+        width: 100%;
+        padding: 2% 1%;
+        position: absolute;
+        top: 0;
+        transition: 0.5s;
+        z-index: 100;
+        .container__header{
+            max-width: 1200px;
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo__fiber{
+                a{
+                    text-decoration: none;
+                    font-family: $fontFamily;
+                    color: var(--font-banner);
+                    font-weight: 600;
+                }
+            }
+            nav.navbar{
+                width: 300px;
+                ul.fiber__list{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style-type:none;
+                    list-style-position: inside;
+                    a.fiber__list__link{
+                        text-decoration: none;
+                        font-family: $fontFamily;
+                        color: var(--text-color);
+                    }
+                }
+                button.btn__mobile{
+                    display: none;
+                }
+            }
+            .btn__header{
+                button.btn__header__Sign__in{
+                    display: inline-block;
+                    padding: 12px 30px;
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: unset;
+                    font-weight: 600;
+                    font-family: $fontFamily;
+                    cursor: pointer;
+                    color: var(--font-banner);
+                }
+                button.btn__header__Sign__up{
+                    display: inline-block;
+                    padding: 12px 30px;
+                    outline: none;
+                    border: none;
+                    border-radius: 7px;
+                    background-color: var(--btn-color);
+                    font-weight: 600;
+                    font-family: $fontFamily;
+                    color: #fff;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    section.sign-up{
+        .container__sign__up{
+            max-width: 1200px;
+            height: 100%;
+            margin: 0px auto;
+            .row__sign__up{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                .box____sign__up{
+                    width: 500px;
+                    position: relative;
+                    overflow: hidden;
+                    form.sign__up{
+                        transform: translateX(0px);
+                        width: 100%;
+                        height: auto;
+                        padding: 20px;
+                        transition: 0.5s;
+                        h1{
+                            text-align: center;
+                            margin: 30px 0px;
+                            font-family: $fontFamily;
+                        }
+                        .input-group{
+                            width: 100%;
+                            height: auto;
+                            margin-top: 5%;
+                            label{
+                                display: block;
+                                font-family: $fontFamily;
+                                margin: 5px  0px;
+                            }
+                            input[type="text"],
+                            input[type="email"],
+                            input[type="password"]{
+                                display: block;
+                                padding: 7px;
+                                border-radius: 5px;
+                                border: 1px solid var(--banner-bg);
+                                font-size: 15px;
+                                width: 100%;
+                                font-family: $fontFamily;
+                                outline: none;
+                            }
+                            i{
+                                display: block;
+                                float: right;
+                                margin-right: 20px;
+                                margin-top: -25px;
+                                cursor: pointer;
+                            }
+                          
+                        }
+                        input[type="checkbox"]{
+                            margin: 10px;
+                        }
+                        span{
+                            font-family: $fontFamily;
+                            margin-left: 5px;
+                            font-size: 14px;
+                        }
+                        button.sign__up{
+                            display: block;
+                            width: 100%;
+                            padding: 15px;
+                            cursor: pointer;
+                            font-family: $fontFamily;
+                            background-color: var(--btn-color);
+                            color: #fff;
+                            outline: none;
+                            border: none;
+                            margin-top: 40px;
+                            border-radius: 5px;
+                        }
+                        span.already{
+                            display:block;
+                            margin: 10px 0px;
+                            text-align: center;
+                            a{
+                                display: inline-block;
+                                margin: 0px auto;
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    form.sign__up.slide{
+                        transform: translateX(500px);
+                        transition: 0.5s;
+                    }
+                    form.sign__in{
+                        position: absolute;
+                        top: 0;
+                        transform: translateX(-500px);
+                        width: 100%;
+                        height: 100%;
+                        padding: 20px;
+                        z-index: 20;
+                        transition: 0.5s;
+                        h1{
+                            font-family: $fontFamily;
+                            text-align: center;
+                        }
+                        .input-group{
+                            margin-top: 10%;
+                            width: 100%;
+                            position: relative;
+                            label{
+                                display: block;
+                                margin: 10px 0px;
+                                font-family: $fontFamily;
+                            }
+                            input[type="email"],
+                            input[type="text"],
+                            input[type="password"]{
+                                display: block;
+                                padding: 7px;
+                                border-radius: 5px;
+                                border: 1px solid var(--banner-bg);
+                                font-size: 15px;
+                                width: 100%;
+                                font-family: $fontFamily;
+                                outline: none;
+                            }
+                            span.eye{
+                                i{
+                                    display: block;
+                                    position: absolute;
+                                    right: 20px;
+                                    bottom: 25px;
+                                    z-index: 20;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        input[type="checkbox"]{
+                            margin: 10px 2px;
+                        }
+                        span{
+                            font-family: $fontFamily;
+                            display: inline-block;
+                            a{
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                        button.btn__sign__in{
+                            width: 100%;
+                            padding: 15px 0px;
+                            outline: none;
+                            border-radius: 5px;
+                            border: none;
+                            cursor: pointer;
+                            font-family: $fontFamily;
+                            background-color: var(--btn-color);
+                            color: #fff;
+                            margin: 30px 0px;
+                        }
+                    }
+                    form.sign__in.slide2{
+                        transform: translateX(0px);
+                        transition: 0.5s;
+                    }
+                }
+                .box__slider__login{
+                    width: 600px;
+                    height: 100vh;
+                    background-color: var(--btn-color);
+                    position: relative;
+                    overflow: hidden;
+                    .slider__frame{
+                        width: 100%;
+                        padding: 80px 0px;
+                        position: absolute;
+                        .box__slider{
+                            width: 100%;
+                            height: 300px;
+                            padding: 30px;
+                            img{
+                                width: 100%;
+                                display: block;
+                                object-fit: cover;
+                            }
+                            .text__slider{
+                                width: 100%;
+                                margin-top: 5%;
+                                font-family: $fontFamily;
+                                text-align: center;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.banner__fiber{
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        background-color: var(--banner-bg);
+        .container__banner__fiber{
+            max-width: 1200px;
+            margin: 0px auto;
+            .row__banner__fiber{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 80px 0px;
+                .box__banner__fiber{
+                    width: 500px;
+                    .text__banner__fiber{
+                        .star{
+                            margin: 10px 0px;
+                            i{
+                                color: #FFAE58;
+                            }
+                        }
+                        width: 100%;
+                        h1{
+                            font-size: 35px;
+                            font-family: $fontFamily;
+                        }
+                        p{
+                            margin: 10px 0px;
+                            font-family: $fontFamily;
+                            color: var(--text-color);
+                        }
+                        button.btn__banner{
+                            display: inline-block;
+                            padding: 12px 30px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            font-family: $fontFamily;
+                            background-color: var(--btn-color);
+                            color: #fff;
+                            margin: 15px 0px;
+                            border-radius: 5px;
+                        }
+                        button.btn__banner.unset{
+                            background-color: unset;
+                            color: var(--btn-color);
+                            text-decoration: underline;
+                            font-weight: 700;
+                        }
+                    }
+                    span{
+                        display: inline-block;
+                        margin-top: 10px;
+                        font-family: $fontFamily;
+                        color: var(--text-color);
+                        margin-right: 10px;
+                        img{
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            width: 20px;
+                        }
+                    }
+                }
+                .box__banner__img{
+                    width: 500px;
+                    img{
+                        width: 100%;
+                        display: block;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    section.banner__service__fiber{
+        padding: 100px 0px;
+        position: relative;
+        .container__banner__service__fiber{
+            max-width: 1200px;
+            margin: 0px auto;
+            .text__Service{
+                width: 450px;
+                font-family: $fontFamily;
+                span{
+                    color: var(--btn-color);
+                    font-weight: 500;
+                }
+                h1{
+                    font-size: 35px;
+                    margin: 10px 0px;
+                }
+            }
+            .row__banner__service__fiber{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5%;
+                .box__Service__fiber{
+                    width: 300px;
+                    font-family: $fontFamily;
+                    animation-name: shake ease-in 0.5s;
+                    img{
+                        display: block;
+                        object-fit: cover;
+                    }
+                    h4{
+                        margin: 10px 0px;
+                    }
+                }
+            }
+            .row__banner__service__img{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: var(--btn-color);
+                margin-top: 5%;
+                padding: 0px 50px;
+                border-radius: 10px;
+                .box__banner__Service__img__text{
+                    width: 400px;
+                    font-family: $fontFamily;
+                    h1{
+                        font-size: 30px;
+                        color: #fff;
+                    }
+                    p{
+                        margin: 20px 0px;
+                        color: #fff;
+                        line-height: 1.7;
+                    }
+                    button.btn__Service{
+                        display: block;
+                        padding: 15px 35px;
+                        border: none;
+                        outline: none;
+                        font-family: $fontFamily;
+                        background-color: var(--banner-bg);
+                        color: var(--btn-color);
+                        font-weight: 600;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+                .box__banner__Service__img__img{
+                    width: 600px;
+                    margin-top: 50px;
+                    img{
+                        width: 100%;
+                        display: block;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    section.testimonial__fiber{
+        padding: 50px 0px;
+        .container__testimonial__fiber{
+            max-width: 1200px;
+            margin: 0px auto;
+            overflow-x: hidden;
+            .row__testimonial__fiber{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .box__testimonial{
+                    width: 350px;
+                    border: 1px solid #E5E5E5;
+                    padding: 20px;
+                    border-radius: 5px;
+                    transition: 0.5s;
+                    font-family: $fontFamily;
+                    .box__img{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 200px;
+                        .text__img__test{
+                            h4{
+                                color: var(--btn-color);
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    span{
+                        display: block;
+                        margin: 15px 0px;
+                    }
+                    button.btn__testimonial{
+                        display: block;
+                        width: 100%;
+                        padding: 12px 10px;
+                        font-family: $fontFamily;
+                        outline: none;
+                        border: 1px solid #E5E5E5;
+                        font-weight: 700;
+                        cursor: pointer;
+                        color: var(--btn-color);
+                        background-color: unset;
+                    }
+                }
+                .box__testimonial:hover{
+                    transform: scale(1);
+                    transition: 0.5s;
+                    box-shadow: 2px 5px 15px #000000;
+                }
+            }
+        }
+    }
+    section.footer{
+        padding: 50px 0px;
+        background-color: var(--banner-bg);
+        .container__footer{
+            max-width: 1200px;
+            margin: 0px auto;
+            footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                .box__footer{
+                    width: 270px;
+                    font-family: $fontFamily;
+                    a{
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: var(--font-banner);
+                        font-weight: 700;
+                    }
+                    p{
+                        margin: 20px 0px;
+                        color: var(--text-color);
+                        font-size: 13px;
+                    }
+                }
+                .box__footer.list{
+                    width: 140px;
+                    li{
+                        list-style-type: none;
+                        padding: 5px 0px;
+                        a{
+                            font-size: 15px;
+                            font-weight: normal;
+                            color: var(--text-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

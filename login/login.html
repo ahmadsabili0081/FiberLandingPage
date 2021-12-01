@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber Landing</title>
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT">
+    <meta http-equiv="refresh" content="500">
+    <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="btn" id="btnScroll" onclick="scrolltoTop()">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+        <header>
+            <div class="container__header">
+                 <div class="logo__fiber" data-aos="fade-right" data-aos-delay="1300">
+                     <a href="#">Fiber</a>
+                 </div>
+
+                 <div class="hamburger" style="display: none;">
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                 </div>
+            </div>
+         </header>
+         <section class="sign-up">
+            <div class="container__sign__up">
+                <div class="row__sign__up">
+                    <div class="box____sign__up">
+                        <form action="#" class="sign__up">
+                            <h1>Create your fiber account</h1>
+                            <div class="input-group">
+                                <label for="#">Your Name</label>
+                                <input type="text" name="#">
+                            </div>
+                            <div class="input-group">
+                                <label for="#">Email</label>
+                                <input type="email" name="#">
+                            </div>
+                            <div class="input-group">
+                                <label for="#">Password</label>
+                                <input id="fakepassword" type="password" name="#"><i id="toggler" class="fa fa-eye" aria-hidden="true"></i>
+                            </div>
+                            <input type="checkbox"><span>By creating an account on Fiber, you aggree to the <a href="#">Terms & conditions</a></span>
+                            <button type="button" class="sign__up">Create Fiber Account</button>
+                            <span class="already">Already have an account?<a  id="sign__up">Sign in</a></span>
+                        </form>
+                        <form action="#" class="sign__in">
+                            <h1>Sign In</h1>
+                            <div class="input-group">
+                                <label for="#">Email</label>
+                                <input type="email">
+                            </div>
+                            <div class="input-group">
+                                <label for="#">Password</label>
+                                <input  type="password" id="fakepassword2" name="#">
+                                <span class="eye"><i id="toggler2" class="fa fa-eye"  aria-hidden="true"></i></span>
+                            </div>
+                            <input type="checkbox">
+                            <span>Did you have an account?<a  id="sign__upp">Sign up</a></span>
+                            <button type="button" class="btn__sign__in"> Sign in</button>
+                        </form>
+                    </div>
+                    <div class="box__slider__login mySwiper">
+                        <div class="slider__frame swiper-wrapper">
+                            <div class="box__slider swiper-slide">
+                                <img src="../Assets/Sign Up Image.png" alt="">
+                                <div class="text__slider">
+                                    <h1>Unpraralled Templates</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit molestiae placeat deserunt, sed voluptatibus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section class="footer">
+            <div class="container__footer">
+                <footer>
+                    <div class="box__footer">
+                        <a href="#">Fiber</a>
+                        <p>With fiber, you can  setup your own personal portofolio in minutes with dozens of premade,
+                            beatiful templates.
+                        </p>
+                    </div>
+                    <div class="box__footer list">
+                        <span><a href="#">Sitemap</a></span>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Features</a></li>
+                    </div>
+                    <div class="box__footer list">
+                        <span><a href="#">Resources</a></span>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </div>
+                    <div class="box__footer list">
+                        <span><a href="#">Company</a></span>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Customer</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </div>
+                    <div class="box__footer list">
+                        <span><a href="#">Portoffolios</a></span>
+                        <li><a href="#">Sarah Addrews</a></li>
+                        <li><a href="#">Mathew Higgins</a></li>
+                        <li><a href="#">Janice Dave</a></li>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --btn-color:#8213FF;
+  --text-color:#5A5A5A;
+  --font-banner:#000000;
+  --banner-bg: #F4ECFE;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container .btn {
+  padding: 10px;
+  border-radius: 7px;
+  position: fixed;
+  right: 0px;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  bottom: 20px;
+  background-color: #000;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 300;
+}
+
+.container .btn i {
+  color: #fff;
+}
+
+.container header {
+  width: 100%;
+  padding: 2% 1%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 100;
+}
+
+.container header .container__header {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header .container__header .logo__fiber a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: var(--font-banner);
+  font-weight: 600;
+}
+
+.container header .container__header nav.navbar {
+  width: 300px;
+}
+
+.container header .container__header nav.navbar ul.fiber__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.container header .container__header nav.navbar ul.fiber__list a.fiber__list__link {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+.container header .container__header nav.navbar button.btn__mobile {
+  display: none;
+}
+
+.container header .container__header .btn__header button.btn__header__Sign__in {
+  display: inline-block;
+  padding: 12px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: unset;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  color: var(--font-banner);
+}
+
+.container header .container__header .btn__header button.btn__header__Sign__up {
+  display: inline-block;
+  padding: 12px 30px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--btn-color);
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container header .container__header .btn__header button.btn__header__Sign__up a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container section.sign-up .container__sign__up {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up {
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up h1 {
+  text-align: center;
+  margin: 30px 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  margin: 5px  0px;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="text"],
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="email"],
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="password"] {
+  display: block;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid var(--banner-bg);
+  font-size: 15px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group i {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up input[type="checkbox"] {
+  margin: 10px;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up span {
+  font-family: "Inter", sans-serif;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up button.sign__up {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  background-color: var(--btn-color);
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up span.already {
+  display: block;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up span.already a {
+  display: inline-block;
+  margin: 0px auto;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up.slide {
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  z-index: 20;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in h1 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in .input-group {
+  margin-top: 10%;
+  width: 100%;
+  position: relative;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in .input-group label {
+  display: block;
+  margin: 10px 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in .input-group input[type="email"],
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in .input-group input[type="text"],
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in .input-group input[type="password"] {
+  display: block;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid var(--banner-bg);
+  font-size: 15px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in .input-group span.eye i {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in input[type="checkbox"] {
+  margin: 10px 2px;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in span {
+  font-family: "Inter", sans-serif;
+  display: inline-block;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in span a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in button.btn__sign__in {
+  width: 100%;
+  padding: 15px 0px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  background-color: var(--btn-color);
+  color: #fff;
+  margin: 30px 0px;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in.slide2 {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box__slider__login {
+  width: 600px;
+  height: 100vh;
+  background-color: var(--btn-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box__slider__login .slider__frame {
+  width: 100%;
+  padding: 80px 0px;
+  position: absolute;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box__slider__login .slider__frame .box__slider {
+  width: 100%;
+  height: 300px;
+  padding: 30px;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box__slider__login .slider__frame .box__slider img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container section.sign-up .container__sign__up .row__sign__up .box__slider__login .slider__frame .box__slider .text__slider {
+  width: 100%;
+  margin-top: 5%;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.container section.banner__fiber {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--banner-bg);
+}
+
+.container section.banner__fiber .container__banner__fiber {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0px;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber {
+  width: 500px;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber {
+  width: 100%;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber .star {
+  margin: 10px 0px;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber .star i {
+  color: #FFAE58;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber h1 {
+  font-size: 35px;
+  font-family: "Inter", sans-serif;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber p {
+  margin: 10px 0px;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber button.btn__banner {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  background-color: var(--btn-color);
+  color: #fff;
+  margin: 15px 0px;
+  border-radius: 5px;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber button.btn__banner.unset {
+  background-color: unset;
+  color: var(--btn-color);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber span {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  margin-right: 10px;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber span img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__img {
+  width: 500px;
+}
+
+.container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__img img {
+  width: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.container section.banner__service__fiber {
+  padding: 100px 0px;
+  position: relative;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .text__Service {
+  width: 450px;
+  font-family: "Inter", sans-serif;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .text__Service span {
+  color: var(--btn-color);
+  font-weight: 500;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .text__Service h1 {
+  font-size: 35px;
+  margin: 10px 0px;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__fiber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__fiber .box__Service__fiber {
+  width: 300px;
+  font-family: "Inter", sans-serif;
+  -webkit-animation-name: shake ease-in 0.5s;
+          animation-name: shake ease-in 0.5s;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__fiber .box__Service__fiber img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__fiber .box__Service__fiber h4 {
+  margin: 10px 0px;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--btn-color);
+  margin-top: 5%;
+  padding: 0px 50px;
+  border-radius: 10px;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__text {
+  width: 400px;
+  font-family: "Inter", sans-serif;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__text h1 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__text p {
+  margin: 20px 0px;
+  color: #fff;
+  line-height: 1.7;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__text button.btn__Service {
+  display: block;
+  padding: 15px 35px;
+  border: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  background-color: var(--banner-bg);
+  color: var(--btn-color);
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__img {
+  width: 600px;
+  margin-top: 50px;
+}
+
+.container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__img img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container section.testimonial__fiber {
+  padding: 50px 0px;
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber {
+  max-width: 1200px;
+  margin: 0px auto;
+  overflow-x: hidden;
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber .row__testimonial__fiber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber .row__testimonial__fiber .box__testimonial {
+  width: 350px;
+  border: 1px solid #E5E5E5;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Inter", sans-serif;
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber .row__testimonial__fiber .box__testimonial .box__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber .row__testimonial__fiber .box__testimonial .box__img .text__img__test h4 {
+  color: var(--btn-color);
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber .row__testimonial__fiber .box__testimonial .box__img .text__img__test p {
+  font-size: 13px;
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber .row__testimonial__fiber .box__testimonial span {
+  display: block;
+  margin: 15px 0px;
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber .row__testimonial__fiber .box__testimonial button.btn__testimonial {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  border: 1px solid #E5E5E5;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--btn-color);
+  background-color: unset;
+}
+
+.container section.testimonial__fiber .container__testimonial__fiber .row__testimonial__fiber .box__testimonial:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 2px 5px 15px #000000;
+          box-shadow: 2px 5px 15px #000000;
+}
+
+.container section.footer {
+  padding: 50px 0px;
+  background-color: var(--banner-bg);
+}
+
+.container section.footer .container__footer {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.container section.footer .container__footer footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.container section.footer .container__footer footer .box__footer {
+  width: 270px;
+  font-family: "Inter", sans-serif;
+}
+
+.container section.footer .container__footer footer .box__footer a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--font-banner);
+  font-weight: 700;
+}
+
+.container section.footer .container__footer footer .box__footer p {
+  margin: 20px 0px;
+  color: var(--text-color);
+  font-size: 13px;
+}
+
+.container section.footer .container__footer footer .box__footer.list {
+  width: 140px;
+}
+
+.container section.footer .container__footer footer .box__footer.list li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+
+.container section.footer .container__footer footer .box__footer.list li a {
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--text-color);
+}
+/*# sourceMappingURL=style.css.map */

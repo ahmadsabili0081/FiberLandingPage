@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --btn-color:#8213FF;
+  --text-color:#5A5A5A;
+  --font-banner:#000000;
+  --banner-bg: #F4ECFE;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .container header {
+    width: 100%;
+    padding: 2% 3%;
+  }
+  .container header .container__header {
+    width: 100%;
+  }
+  .container section.banner__fiber {
+    padding: 0px 10px;
+  }
+  .container section.banner__fiber .container__banner__fiber {
+    width: 100%;
+  }
+  .container section.banner__service__fiber {
+    padding: 100px 0px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber {
+    width: 100%;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .text__Service {
+    padding: 20px 10px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__fiber {
+    padding: 20px 10px;
+  }
+  .container section.testimonial__fiber {
+    padding: 100px 10px;
+  }
+  .container section.testimonial__fiber .container__testimonial__fiber {
+    width: 100%;
+  }
+  .container section.footer {
+    padding: 100px 10px;
+  }
+  .container section.footer .container__footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .container header {
+    width: 100%;
+    padding: 2% 3%;
+  }
+  .container header.sticky {
+    position: fixed;
+    top: 0;
+    background-color: var(--btn-color);
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+  }
+  .container header.sticky .logo__fiber a {
+    color: #fff;
+  }
+  .container header.sticky .hamburger span.bar {
+    background-color: #fff;
+  }
+  .container header.sticky nav.navbar ul.fiber__list li a.fiber__list__link {
+    color: #fff;
+  }
+  .container section.banner__fiber {
+    padding: 0px 10px;
+  }
+  .container section.banner__fiber .container__banner__fiber {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .container section.banner__fiber .container__banner__fiber .row__banner__fiber {
+    padding: 270px 0px;
+  }
+  .container section.banner__service__fiber {
+    padding: 100px 10px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber {
+    width: 100%;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img {
+    margin-top: 10%;
+  }
+  .container section.testimonial__fiber {
+    padding: 100px 10px;
+  }
+  .container section.testimonial__fiber .container__testimonial__fiber {
+    width: 100%;
+  }
+  .container section.footer {
+    padding: 50px 10px;
+  }
+  .container section.footer .container__footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+  .container header {
+    width: 100%;
+  }
+  .container header .container__header {
+    width: 100%;
+  }
+  .container header .container__header .logo__fiber {
+    margin: 10px 10px;
+  }
+  .container header .container__header .hamburger {
+    width: 30px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    right: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 500;
+  }
+  .container header .container__header .hamburger span.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .container__header .hamburger.rotate span.bar:first-child {
+    -webkit-transform: rotate(45deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(7px, 7px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .container__header .hamburger.rotate span.bar:nth-child(2) {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .container header .container__header .hamburger.rotate span.bar:last-child {
+    -webkit-transform: rotate(-45deg) translate(5px, -6px);
+            transform: rotate(-45deg) translate(5px, -6px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .container__header nav.navbar {
+    position: fixed;
+    top: 55px;
+    right: 0;
+    display: block;
+    height: 0;
+    z-index: 200;
+    overflow-y: hidden;
+    background-color: var(--btn-color);
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .container__header nav.navbar ul.fiber__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20%;
+  }
+  .container header .container__header nav.navbar ul.fiber__list li {
+    padding: 20px;
+  }
+  .container header .container__header nav.navbar ul.fiber__list li a.fiber__list__link {
+    color: #F4ECFE;
+  }
+  .container header .container__header nav.navbar ul.fiber__list button.btn__mobile {
+    display: block;
+  }
+  .container header .container__header nav.navbar.navShow {
+    height: 50vh;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .container__header .btn__header {
+    display: none;
+  }
+  .container section.sign-up {
+    padding: 0px 10px;
+  }
+  .container section.sign-up .container__sign__up {
+    width: 100%;
+  }
+  .container section.sign-up .container__sign__up .row__sign__up {
+    padding: 50px 0px;
+  }
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up {
+    width: 100%;
+  }
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up {
+    width: 100%;
+  }
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group {
+    width: 100%;
+  }
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="text"],
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="email"],
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="password"] {
+    width: 100%;
+  }
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="text"] div,
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="email"] div,
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__up .input-group input[type="password"] div {
+    width: 100%;
+  }
+  .container section.sign-up .container__sign__up .row__sign__up .box____sign__up form.sign__in {
+    width: 100%;
+  }
+  .container section.sign-up .container__sign__up .row__sign__up .box__slider__login {
+    display: none;
+  }
+  .container header.sticky {
+    position: fixed;
+    top: 0;
+    background-color: var(--btn-color);
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+  }
+  .container header.sticky .logo__fiber a {
+    color: #fff;
+  }
+  .container header.sticky .hamburger span.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container section.banner__fiber {
+    padding: 0px 10px;
+  }
+  .container section.banner__fiber .container__banner__fiber {
+    width: 100%;
+  }
+  .container section.banner__fiber .container__banner__fiber .row__banner__fiber {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 50px 10px 20px 10px;
+  }
+  .container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__img {
+    width: 95%;
+  }
+  .container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber {
+    width: 100%;
+  }
+  .container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber {
+    text-align: center;
+  }
+  .container section.banner__service__fiber {
+    padding: 100px 0px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber {
+    width: 100%;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .text__Service {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .text__Service h1 {
+    font-size: 25px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__fiber {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__fiber .box__Service__fiber {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__fiber .box__Service__fiber img {
+    margin: 10px auto;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img {
+    padding: 0px 20px;
+    margin-top: 15%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__text {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .container section.banner__service__fiber .container__banner__service__fiber .row__banner__service__img .box__banner__Service__img__img img {
+    margin-top: 20px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .container section.footer {
+    padding: 50px 10px;
+  }
+  .container section.footer .container__footer {
+    width: 100%;
+  }
+  .container section.footer .container__footer footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container section.footer .container__footer footer .box__footer {
+    width: 100%;
+    text-align: center;
+  }
+  .container section.footer .container__footer footer .box__footer.list {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+  .container header {
+    width: 100%;
+  }
+  .container header .container__header {
+    width: 100%;
+  }
+  .container section.banner__fiber {
+    padding: 0px 10px;
+  }
+  .container section.banner__fiber .container__banner__fiber {
+    width: 100%;
+  }
+  .container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber h1 {
+    font-size: 25px;
+  }
+  .container section.banner__fiber .container__banner__fiber .row__banner__fiber .box__banner__fiber .text__banner__fiber button.btn__banner {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
